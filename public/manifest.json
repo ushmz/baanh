@@ -1,0 +1,25 @@
+{
+    "name": "baanh",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "baanh",
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "browser_action": {
+        "default_title": "",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "*://*.google.com/*" ],
+            "js": [ "popup.js" ]
+        }
+    ],
+    "options_page": "option.html",
+    "web_accessible_resources": [
+        ""
+    ],
+    "permissions": [
+        "history",
+        "downloads"
+    ]
+}
