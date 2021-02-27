@@ -33,6 +33,6 @@
   },
   "scripts": {
     "build": "webpack --mode development",
-    "build pack": "webpack --mode production"
+    "build:prod": "webpack --mode production"
   }
 }
